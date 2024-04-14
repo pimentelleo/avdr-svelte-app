@@ -2,7 +2,7 @@
 <div class="main-section">
 	<div class="main-content">
 		<h1>Squaremap</h1>
-		<p>Plugin que gera o mapa web disponível em http://map.vilarenegados.duckdns.org</p>
+		<p>Plugin que gera o mapa web disponível em https://map.vilarenegados.duckdns.org</p>
 		<div class="square-map">
 			<object
 				title="square-map"
@@ -18,7 +18,6 @@
 
 <style>
 	.main-section {
-		width: auto;
 		flex-grow: 1;
 		height: 100%;
 	}
@@ -29,12 +28,14 @@
 		align-items: center;
 		background-color: grey;
 		height: 100%;
-		max-width: 100%;
+		width: 100%;
 	}
 	.square-map {
 		background-color: red;
 		flex-grow: 1;
 		position: center;
 		margin: 0;
+		align-self: auto;
+		width: 80%;
 	}
 </style>

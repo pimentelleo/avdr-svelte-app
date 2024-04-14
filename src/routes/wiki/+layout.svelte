@@ -30,8 +30,10 @@
 	.tabs {
 		display: flex;
 		justify-content: space-around;
-		background-color: purple;
+		align-items: center;
+		background-color: #282828;
 		flex-grow: 0;
+		height: 10%;
 	}
 
 	.main-content {

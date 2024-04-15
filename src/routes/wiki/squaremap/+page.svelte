@@ -32,7 +32,7 @@
 	}
 	.square-map {
 		background-color: red;
-		flex-grow: 1;
+		flex-grow: 2;
 		position: center;
 		margin: 0;
 		align-self: auto;

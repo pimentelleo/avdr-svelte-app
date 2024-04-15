@@ -1,16 +1,26 @@
 <script>
 	import { page } from '$app/stores';
+	console.log($page.url.pathname.split('/'));
+
+	const baseUrl = $page.url.pathname.split('/')[1];
+
+	const tabSections = [
+		'Slimefun',
+		'Lands',
+		'Squaremap',
+		'Minetinkers',
+		'Authme',
+		'QuickShop',
+		'TeleCraft',
+		'Bananinhas'
+	];
 </script>
 
 <div class="app">
 	<div class="tabs">
-		<div><a href="/wiki/slimefun">Slimefun</a></div>
-		<div><a href="/wiki/lands">Lands</a></div>
-		<div><a href="/wiki/squaremap">Squaremap</a></div>
-		<div><a href="wiki/minetinkers">Minetinkers</a></div>
-		<div><a href="wiki/authme">Authme</a></div>
-		<div><a href="wiki/quickshop">QuickShop</a></div>
-		<div><a href="wiki/telecraft">TeleCraft</a></div>
+		{#each tabSections as section}
+			<div><a href="/{baseUrl}/{section.toLowerCase()}">{section}</a></div>
+		{/each}
 	</div>
 	<div class="main-content">
 		<slot />
@@ -33,13 +43,16 @@
 		align-items: center;
 		background-color: #282828;
 		flex-grow: 0;
-		height: 10%;
+		height: 14%;
 	}
 
 	.main-content {
 		display: flex;
 		justify-content: space-around;
-		flex-grow: 2;
+		flex-grow: 1;
 		overflow-y: auto;
+	}
+	.main-content::-webkit-scrollbar {
+		display: none;
 	}
 </style>

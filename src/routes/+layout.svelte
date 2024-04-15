@@ -1,6 +1,9 @@
 <script>
 	import NavBar from './NavBar.svelte';
 	import './style.css';
+	import { page } from '$app/stores';
+
+	const baseUrl = $page.url.pathname.split('/')[1];
 </script>
 
 <div class="app">

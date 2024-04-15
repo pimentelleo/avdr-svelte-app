@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import steve from '$lib/steve.svg';
 
-	const navSections = ['', 'Regras', 'Conexões', 'Plugins', 'Registro', 'Wiki', 'Settings'];
+	const navSections = ['', 'Rules', 'Wiki'];
 </script>
 
 <div class="wrapper">

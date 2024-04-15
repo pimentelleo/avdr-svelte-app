@@ -11,8 +11,7 @@
 		'Minetinkers',
 		'Authme',
 		'QuickShop',
-		'TeleCraft',
-		'Bananinhas'
+		'TeleCraft'
 	];
 </script>
 

@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import steve from '$lib/steve.svg';
 
-	const navSections = ['', 'Rules', 'Wiki'];
+	const navSections = ['', 'Rules', 'Wiki', 'Register'];
 </script>
 
 <div class="wrapper">
@@ -26,20 +26,6 @@
 
 	a {
 		color: white;
-		font-family:
-			system-ui,
-			-apple-system,
-			BlinkMacSystemFont,
-			'Segoe UI',
-			Roboto,
-			Oxygen,
-			Ubuntu,
-			Cantarell,
-			'Open Sans',
-			'Helvetica Neue',
-			sans-serif;
-		font-style: normal;
-		font-size: 14;
 	}
 	img {
 		width: 20%;

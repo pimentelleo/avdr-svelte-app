@@ -3,6 +3,10 @@
 	console.log($page.url.pathname.split('/'));
 
 	const baseUrl = $page.url.pathname.split('/')[1];
+	const splitUrl = $page.url.pathname.split('/');
+	const currentPage = splitUrl[splitUrl.length - 1];
+	console.log(currentPage);
+	const handleClick = (/** @type {Intl} */ tabValue) => () => (activeTabValue = tabValue);
 
 	const tabSections = [
 		'Slimefun',
@@ -18,7 +22,9 @@
 <div class="app">
 	<div class="tabs">
 		{#each tabSections as section}
-			<div><a href="/{baseUrl}/{section.toLowerCase()}">{section}</a></div>
+			<div class={currentPage == section ? 'active' : 'inactive'}>
+				<a href="/{baseUrl}/{section.toLowerCase()}">{section}</a>
+			</div>
 		{/each}
 	</div>
 	<div class="main-content">
@@ -27,6 +33,22 @@
 </div>
 
 <style>
+	.tab-active {
+		background-color: yellow;
+	}
+
+	div.active > a {
+		background-color: yellow;
+	}
+
+	.tab-inactive {
+		background-color: pink;
+	}
+
+	.tabs > div > a:hover {
+		background-color: green;
+	}
+
 	div > a {
 		color: white;
 	}

@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="A Vila dos Renegados - Minecraft Server" />

@@ -14,7 +14,7 @@
 </script>
 
 <audio autoplay id="plaza-radio">
-	<source src="http://radio.plaza.one/mp3" />
+	<source src="https://radio.plaza.one/mp3" />
 </audio>
 <div class="app">
 	<NavBar></NavBar>

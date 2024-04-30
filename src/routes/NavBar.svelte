@@ -2,11 +2,12 @@
 	import { page } from '$app/stores';
 	import steve from '$lib/steve.svg';
 
-	const navSections = ['', 'Rules', 'Wiki', 'Register'];
+	const navSections = ['Rules', 'Wiki', 'Register'];
 </script>
 
 <div class="wrapper">
 	<div class="sidebar">
+		<div><img src={steve} alt="Home" /><a href="/">Home</a></div>
 		{#each navSections as nav}
 			<div><img src={steve} alt="Home" /><a href="/{nav.toLowerCase()}">{nav}</a></div>
 		{/each}

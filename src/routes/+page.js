@@ -1,6 +1,7 @@
+import { PUBLIC_BACKEND_URL } from '$env/static/public';
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch, params }) {
-    const res = await fetch(`https://uk141ik69qaz.share.zrok.io/onlineusers`);
+    const res = await fetch(PUBLIC_BACKEND_URL + "/onlineusers");
     const item = await res.json();
     console.log(item)
 

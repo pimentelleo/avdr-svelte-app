@@ -1,6 +1,7 @@
 /** @type {import('./$types').Actions} */
 import { error } from '@sveltejs/kit';
 import { fail } from '@sveltejs/kit';
+import { PUBLIC_BACKEND_URL } from '$env/static/public';
 
 
 export const actions = {
@@ -12,7 +13,7 @@ export const actions = {
             realname: formData.get('username'),
             email: formData.get('email')
         };
-        const response = await fetch(`https://uk141ik69qaz.share.zrok.io/register/submit`, {
+        const response = await fetch(PUBLIC_BACKEND_URL + "/register/submit", {
             method: 'POST',
             headers: new Headers({ 'content-type': 'application/json' }),
             body: JSON.stringify(data)

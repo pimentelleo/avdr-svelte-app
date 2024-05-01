@@ -6,71 +6,73 @@
 </script>
 
 <div class="main-section">
-	<form method="POST">
-		<label>
-			Username
-			{#if form?.userAlreadyExists}
-				<input
-					class="input-error"
-					name="username"
-					type="text"
-					placeholder="Username already exists!"
-					required
-				/>
-			{:else}
+	<div>
+		<form method="POST">
+			<label>
+				Username
+				{#if form?.userAlreadyExists}
+					<input
+						class="input-error"
+						name="username"
+						type="text"
+						placeholder="Username already exists!"
+						required
+					/>
+				{:else}
+					<input
+						class="input-main"
+						name="username"
+						type="text"
+						placeholder="Enter your username"
+						required
+					/>
+				{/if}
+			</label>
+			<label>
+				Email
+				{#if form?.emailAlreadyUsing}
+					<input
+						class="input-error"
+						name="email"
+						type="email"
+						placeholder="Email is being used!"
+						required
+					/>
+				{:else}
+					<input
+						class="input-main"
+						name="email"
+						type="email"
+						placeholder="Enter your email"
+						required
+					/>
+				{/if}
+			</label>
+			<label>
+				Password
 				<input
 					class="input-main"
-					name="username"
-					type="text"
-					placeholder="Enter your username"
+					name="password"
+					type="password"
+					placeholder="Enter your password"
 					required
 				/>
-			{/if}
-		</label>
-		<label>
-			Email
-			{#if form?.emailAlreadyUsing}
-				<input
-					class="input-error"
-					name="email"
-					type="email"
-					placeholder="Email is being used!"
-					required
-				/>
-			{:else}
+			</label>
+			<label>
+				Repeat password
 				<input
 					class="input-main"
-					name="email"
-					type="email"
-					placeholder="Enter your email"
+					name="password"
+					type="password"
+					placeholder="Repeat your password"
 					required
 				/>
-			{/if}
-		</label>
-		<label>
-			Password
-			<input
-				class="input-main"
-				name="password"
-				type="password"
-				placeholder="Enter your password"
-				required
-			/>
-		</label>
-		<label>
-			Repeat password
-			<input
-				class="input-main"
-				name="password"
-				type="password"
-				placeholder="Repeat your password"
-				required
-			/>
-		</label>
-		<div class="button-border">
-			<button><div class="button-text">Register</div></button>
-		</div>
-	</form>
+			</label>
+			<div class="button-border">
+				<button><div class="button-text">Register</div></button>
+			</div>
+		</form>
+	</div>
 </div>
 
 <style>
@@ -88,6 +90,7 @@
 		height: 100%;
 		width: 100%;
 		gap: 20px;
+		margin-top: 10%;
 	}
 	label {
 		display: flex;

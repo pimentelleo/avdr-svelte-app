@@ -42,5 +42,12 @@
 		width: 0%;
 		flex-grow: 1;
 		overflow-y: auto;
+		background-color: #303030;
+	}
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.main-content {
+			background-color: #303030;
+		}
 	}
 </style>

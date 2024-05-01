@@ -1,15 +1,49 @@
 <script>
 	import { page } from '$app/stores';
 	import steve from '$lib/steve.svg';
+	import craftTable from '$lib/craft-table.svg';
+	import minecraft from '$lib/minecraft.svg';
+	import minecraftLava from '$lib/minecraft-lava.svg';
+	import bookshelf from '$lib/bookshelf.svg';
 
-	const navSections = ['Rules', 'Connect', 'Wiki', 'Register'];
+	const navSections = [
+		{
+			sectionName: 'Home',
+			sectionRoute: '',
+			sectionIcon: minecraft
+		},
+		{
+			sectionName: 'Rules',
+			sectionRoute: 'rules',
+			sectionIcon: steve
+		},
+		{
+			sectionName: 'Connect',
+			sectionRoute: 'connect',
+			sectionIcon: craftTable
+		},
+		{
+			sectionName: 'Wiki',
+			sectionRoute: 'wiki',
+			sectionIcon: bookshelf
+		},
+		{
+			sectionName: 'Register',
+			sectionRoute: 'register',
+			sectionIcon: minecraftLava
+		}
+	];
 </script>
 
 <div class="wrapper">
 	<div class="sidebar">
-		<div><img src={steve} alt="Home" /><a href="/">Home</a></div>
 		{#each navSections as nav}
-			<div><img src={steve} alt="Home" /><a href="/{nav.toLowerCase()}">{nav}</a></div>
+			<div>
+				<img src={nav.sectionIcon} alt={nav.sectionName} />
+				<a href="/{nav.sectionRoute}">
+					{nav.sectionName}
+				</a>
+			</div>
 		{/each}
 	</div>
 </div>
@@ -23,6 +57,9 @@
 		align-content: center;
 		text-align: center;
 		height: 100%;
+		overflow-y: auto;
+		align-items: right;
+		flex: 1 0 10%;
 	}
 
 	a {
@@ -40,14 +77,22 @@
 		align-content: center;
 		margin-left: 10%;
 	}
-	.sidebar {
-		align-items: right;
-		flex: 1 0 10%;
-	}
 	.wrapper {
 		display: flex;
 		height: 100%;
 		background-color: #1e1e1e;
 		width: 18%;
+	}
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.wrapper {
+			display: flex;
+			height: 100%;
+			background-color: #1e1e1e;
+			width: 29%;
+		}
+		.sidebar {
+			justify-content: space-evenly;
+		}
 	}
 </style>

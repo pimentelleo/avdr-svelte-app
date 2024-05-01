@@ -18,6 +18,7 @@
 	.main-section {
 		width: auto;
 		flex-grow: 1;
+		background-color: #303030;
 	}
 	.content {
 		display: flex;

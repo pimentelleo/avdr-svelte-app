@@ -3,6 +3,8 @@
 	export let data;
 	/** @type {import('./$types').ActionData} */
 	export let form;
+	console.log(form);
+	console.log(data);
 </script>
 
 <div class="main-section">

@@ -60,6 +60,7 @@
 		overflow-y: auto;
 		align-items: right;
 		flex: 1 0 10%;
+		margin-top: 10px;
 	}
 
 	a {

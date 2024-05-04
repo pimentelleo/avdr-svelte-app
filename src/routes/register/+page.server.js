@@ -19,17 +19,11 @@ export const actions = {
             body: JSON.stringify(data)
         })
         const responseContent = await response.json()
-        console.log(responseContent)
-        if (responseContent.usernameTaken = true) {
-            return fail(400, {
-                userAlreadyExists: true
-            });
+        let responseStatus = {
+            userAlreadyExists: responseContent.usernameTaken,
+            emailAlreadyUsing: responseContent.emailTaken
         }
-        if (responseContent.emailTaken = true) {
-            return fail(400, {
-                emailAlreadyUsing: true
-            });
-        }
+        return responseStatus
 
     }
 

@@ -52,15 +52,14 @@
 	.sidebar {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
 		align-items: center;
 		align-content: center;
 		text-align: center;
 		height: 100%;
 		overflow-y: auto;
 		align-items: right;
-		flex: 1 0 10%;
-		margin-top: 10px;
+		margin-top: 20%;
+		gap: 50px;
 	}
 
 	a {
@@ -83,6 +82,7 @@
 		height: 100%;
 		background-color: #1e1e1e;
 		width: 18%;
+		gap: 10px;
 	}
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {

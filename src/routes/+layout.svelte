@@ -1,5 +1,6 @@
 <script>
 	/** @type {import('./$types').PageData} */
+	/** @type {import('./$types').LayoutData} */
 
 	import '../app.pcss';
 	import NavBar from './NavBar.svelte';

@@ -5,6 +5,13 @@
 	import minecraft from '$lib/minecraft.svg';
 	import minecraftLava from '$lib/minecraft-lava.svg';
 	import bookshelf from '$lib/bookshelf.svg';
+	let selectedPage = '';
+	/**
+	 * @param {string} page
+	 */
+	function setActivePage(page) {
+		Promise.resolve(true).then(() => (selectedPage = page));
+	}
 
 	const navSections = [
 		{
@@ -40,7 +47,7 @@
 		{#each navSections as nav}
 			<div>
 				<img src={nav.sectionIcon} alt={nav.sectionName} />
-				<a href="/{nav.sectionRoute}">
+				<a on:click={setActivePage(nav.sectionRoute)} href="/{nav.sectionRoute}">
 					{nav.sectionName}
 				</a>
 			</div>

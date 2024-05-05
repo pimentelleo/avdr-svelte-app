@@ -32,10 +32,13 @@
 		flex-grow: 1;
 		flex-direction: column;
 		justify-content: space-between;
+		align-items: center;
 		/* width: 100%; */
 		flex: 2;
 		/* margin-bottom: 0; */
 		overflow: auto;
+		margin-top: 3%;
+		color: #ffffff;
 	}
 	img {
 		width: 400px;

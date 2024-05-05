@@ -18,28 +18,32 @@
 		Hacks: O uso de hack, mods hacks ou qualquer alteracao nas configuracoes de seu minecraft que
 		lhe concedam vantagens exclusivas (em pvp, mineracao, etc...) sobre os demais, e gravissimo e
 		nao tolerado em nossos servidores. O uso de hack tornam a jogabilidade desleal e os acusados
-		serao banidos permanentemente. PUNIcaO: BAN
+		serao banidos permanentemente. <font color="RED"> Punicao: BAN. </font>
 	</p>
 	<p>
 		Claim Irregular: Uma claim e considerada irregular quando nao esta a mais de 32 blocos de
 		distancia da claim de outro jogador. Isso so podera ocorrer quando o dono da claim permitir que
 		seja feita outra claim proxima a sua. E tambem sera considerada irregular a claim que esteja
-		impedindo o jogador de coletar o seu deadchest ou entrar no portal do end. PUNIcaO: 15 HORAS
+		impedindo o jogador de coletar o seu deadchest ou entrar no portal do end. <font color="RED">
+			15 horas.</font
+		>
 	</p>
 	<p>
 		Griefing com Blocos: Colocar blocos intencionalmente, visando prejudicar um player (como por
 		exemplo obstruir portas, alcapoes, etc...) e considerado grief. Os blocos em questao serao
 		identificados, removidos e o player punido conforme as regras. Essa regra nao envolve
-		deadchests, e permitido grifar deadchests. PUNIcaO: 20 HORAS
+		deadchests, e permitido grifar deadchests. <font color="RED"> 20 horas.</font>
 	</p>
 	<p>
 		Griefing com Lava/Agua: A utilizacao de agua/lava para grief e considerada gravissima tendo em
-		vista a dificuldade de retira-lo e o responsavel sera punido. PUNIcaO: 40 HORAS
+		vista a dificuldade de retira-lo e o responsavel sera punido. <font color="RED">
+			40 horas.</font
+		>
 	</p>
 	<p>
 		Conduta de Clans: Qualquer clan que desrespeite algumas das regras aqui citadas, pode e sera
 		deletado e os membros infratores punidos. Sendo que o clan so sera deletado se a maioria dos
-		membros do clan participarem da infracao. PUNICAO: BAN
+		membros do clan participarem da infracao. <font color="RED"> Punicao: BAN. </font>
 	</p>
 	<p>*Qualquer reincidência(x3) na quebra de regras resultara em ban.</p>
 </div>

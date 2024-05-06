@@ -37,6 +37,7 @@ jobs:
     - name: Cleanup build folder
       run: |
         rm -rf *
+    # - uses: actions/checkout@v2
     - name: Download build Artifacts for deployment
       uses: actions/download-artifact@v2
       with:
@@ -45,4 +46,4 @@ jobs:
     - name: Start Application
       run: |
         pm2 delete svelteapp
-        pm2 start build/index.js --name svelteapp --id 7
+        pm2 start build/index.js --name svelteapp

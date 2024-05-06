@@ -34,10 +34,15 @@ jobs:
     needs: build
     runs-on: self-hosted
     steps:
+    - name: Cleanup build folder
+      run: |
+        rm -rf *
     - name: Download build Artifacts for deployment
       uses: actions/download-artifact@v2
       with:
         name: build-artifacts
         path: ./build
     - name: Start Application
-      run: pm2 start build/index.js --name svelteapp
+      run: |
+        pm2 delete svelteapp
+        pm2 start build/index.js --name svelteapp --id=7

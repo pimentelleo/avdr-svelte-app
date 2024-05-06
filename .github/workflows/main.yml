@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 env:
   # Setting an environment variable with the value of a configuration variable
-  PUBLIC_BACKEND_URL: ${{ vars.SVELTE_APP }}
+  PUBLIC_BACKEND_URL: "https://api.vilarenegados.duckdns.org"
 
 jobs:
   build:

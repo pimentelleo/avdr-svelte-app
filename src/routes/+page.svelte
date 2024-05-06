@@ -38,7 +38,6 @@
 		/* margin-bottom: 0; */
 		overflow: auto;
 		margin-top: 3%;
-		color: #ffffff;
 	}
 	img {
 		width: 400px;

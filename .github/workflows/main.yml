@@ -40,4 +40,4 @@ jobs:
         name: build-artifacts
         path: ./build
     - name: Start Application
-      run: pm2 start index.js
+      run: pm2 start build/index.js --name svelteapp

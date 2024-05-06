@@ -2,8 +2,17 @@
 	/**
 	 * @type {any}
 	 */
+	import RadioPlayer from '../lib/RadioPlayer.svelte';
+
 	export let users;
+
 	console.log('header info users' + ' ' + JSON.stringify(users));
+
+	//volume slider
+	let paused = true;
+	const pauseRadio = () => {
+		paused = !paused;
+	};
 </script>
 
 <header>
@@ -18,12 +27,15 @@
 			</div>
 		{/if}
 	</div>
+	<RadioPlayer />
 </header>
 
 <style>
 	header {
 		background-color: #282828;
 		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
 	}
 	.users-status {
 		color: #ffffff;

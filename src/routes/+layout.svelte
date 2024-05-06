@@ -7,16 +7,12 @@
 	import Header from './Header.svelte';
 	import './style.css';
 	import { page } from '$app/stores';
-	import { Alert, DarkMode } from 'flowbite-svelte';
 
 	export let data;
 	console.log(data);
 	const baseUrl = $page.url.pathname.split('/')[1];
 </script>
 
-<audio autoplay id="plaza-radio">
-	<source src="https://radio.plaza.one/mp3" />
-</audio>
 <div class="app">
 	<NavBar></NavBar>
 

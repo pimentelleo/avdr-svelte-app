@@ -37,7 +37,7 @@ jobs:
     - name: Cleanup build folder
       run: |
         rm -rf *
-    # - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
     - name: Download build Artifacts for deployment
       uses: actions/download-artifact@v2
       with:

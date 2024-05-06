@@ -3,6 +3,9 @@ name: Svelte CI/CD - Self Hosted SSR
 on:
   push:
     branches: [ main ]
+env:
+  # Setting an environment variable with the value of a configuration variable
+  env_var: ${{ vars.SVELTE_PROD }}
 
 jobs:
   build:

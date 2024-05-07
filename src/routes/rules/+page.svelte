@@ -62,8 +62,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		align-items: center;
-		color: #ffffff;
+		padding: 0;
+		height: 100%;
 	}
 
 	/* p {

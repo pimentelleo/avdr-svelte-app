@@ -24,14 +24,14 @@
 
 <style>
 	@font-face {
-		font-family: 'Minecraft';
+		font-family: 'Minecraft Ten';
 		font-style: normal;
 		font-weight: normal;
 		src: url('$lib/fonts/minecraftten.woff') format('woff2');
 	}
 
 	@font-face {
-		font-family: 'Minecraft Ten';
+		font-family: 'Minecraft';
 		font-style: normal;
 		font-weight: normal;
 		src: url('$lib/fonts/minecrafttext.woff') format('woff2');
@@ -41,17 +41,22 @@
 		display: flex;
 		flex-direction: row;
 		height: 100%;
-		font-family: 'Minecraft';
+		font-family: 'Minecraft Ten';
+		overflow: hidden;
 	}
 
 	.main-content {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 0%;
 		flex-grow: 1;
 		overflow-y: auto;
 		background-color: #303030;
+	}
+
+	.main-content::-webkit-scrollbar {
+		display: none;
 	}
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {

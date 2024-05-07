@@ -30,6 +30,7 @@
 		overflow: hidden;
 		display: flex;
 		justify-content: space-between;
+		height: 5%;
 	}
 	.users-status {
 		color: #ffffff;

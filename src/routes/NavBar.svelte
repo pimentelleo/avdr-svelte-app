@@ -47,7 +47,7 @@
 		{#each navSections as nav}
 			<div>
 				<img src={nav.sectionIcon} alt={nav.sectionName} />
-				<a on:click={setActivePage(nav.sectionRoute)} href="/{nav.sectionRoute}">
+				<a href="/{nav.sectionRoute}">
 					{nav.sectionName}
 				</a>
 			</div>

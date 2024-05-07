@@ -23,13 +23,25 @@
 </div>
 
 <style>
-	@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+	@font-face {
+		font-family: 'Minecraft';
+		font-style: normal;
+		font-weight: normal;
+		src: url('$lib/fonts/minecraftten.woff') format('woff2');
+	}
+
+	@font-face {
+		font-family: 'Minecraft Ten';
+		font-style: normal;
+		font-weight: normal;
+		src: url('$lib/fonts/minecrafttext.woff') format('woff2');
+	}
 
 	.app {
 		display: flex;
 		flex-direction: row;
 		height: 100%;
-		font-family: 'Minecraft', sans-serif;
+		font-family: 'Minecraft';
 	}
 
 	.main-content {

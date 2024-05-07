@@ -7,12 +7,6 @@
 	export let users;
 
 	console.log('header info users' + ' ' + JSON.stringify(users));
-
-	//volume slider
-	let paused = true;
-	const pauseRadio = () => {
-		paused = !paused;
-	};
 </script>
 
 <header>

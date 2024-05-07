@@ -26,6 +26,12 @@
 		<div transition:slide={{ delay: 250, duration: 300, easing: quartOut, axis: 'x' }}>
 			<div class="radio-player">
 				<div class="button-border">
+					<div class="volume-level" style="background-image: url({textureGrey})">
+						{Math.floor(volume * 100)}
+					</div>
+				</div>
+				<input type="range" bind:value={volume} max="1" step="0.01" />
+				<div class="button-border">
 					<button
 						class="play-pause"
 						style="background-image: url({textureGrey})"
@@ -34,17 +40,10 @@
 						{paused ? 'Play' : 'Pause'}
 					</button>
 				</div>
-				<div class="button-border">
-					<div class="volume-level" style="background-image: url({textureGrey})">
-						{Math.floor(volume * 100)}
-					</div>
-				</div>
-
-				<input type="range" bind:value={volume} max="1" step="0.01" />
 			</div>
 		</div>
 	{/if}
-	<Button class="radio-button" on:click={openRadioGui}>MUSIC</Button>
+	<button class="radio-button" on:click={openRadioGui}> MUSIC </button>
 </div>
 
 <style>
@@ -52,8 +51,15 @@
 		display: flex;
 		gap: 4px;
 	}
+
 	.radio-button {
-		width: 20%;
+		background-color: #128947;
+		border-top-color: #35ce49;
+		border-bottom-color: #0b4e2d;
+		border-width: 2px;
+		border-left-width: 0;
+		border-right-width: 0;
+		width: 60px;
 	}
 	.radio-player {
 		display: flex;
@@ -66,6 +72,7 @@
 		border-left-color: #b2b2b2;
 		border-right-color: #434343;
 		border-width: 1px;
+		width: 55px;
 	}
 	.volume-level {
 		border-top-color: #b2b2b2;
@@ -73,7 +80,8 @@
 		border-left-color: #b2b2b2;
 		border-right-color: #434343;
 		border-width: 1px;
-		width: 100%;
+		width: 30px;
+		text-align: center;
 	}
 	.button-border {
 		border-color: black;
@@ -89,6 +97,7 @@
 	input[type='range']::-webkit-slider-thumb {
 		-webkit-appearance: none !important;
 		height: 26px;
+		width: 14px;
 		border-radius: 0;
 		border-width: 2px;
 		border-color: black;

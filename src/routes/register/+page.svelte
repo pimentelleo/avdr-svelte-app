@@ -105,7 +105,7 @@
 		background-color: #131313;
 		border-radius: 4px;
 		color: #ffffff;
-		padding: 5px 10px 10px 10px;
+		padding: 10px 10px 10px 10px;
 		border: 0;
 	}
 
@@ -115,7 +115,7 @@
 		color: #ffffff;
 		border-color: red;
 		border: 2;
-		padding: 5px 10px 10px 10px;
+		padding: 10px 10px 10px 10px;
 	}
 	::placeholder {
 		color: #ffffff7f;

@@ -40,13 +40,7 @@
 					</div>
 				</div>
 
-				<input
-					style="background-image: url({textureGrey})"
-					type="range"
-					bind:value={volume}
-					max="1"
-					step="0.01"
-				/>
+				<input type="range" bind:value={volume} max="1" step="0.01" />
 			</div>
 		</div>
 	{/if}
@@ -87,7 +81,18 @@
 		width: 100%;
 	}
 
-	img {
-		width: 10%;
+	input[type='range'] {
+		-webkit-appearance: none !important;
+		background-color: #2c2c2c;
+		border-color: black;
+	}
+	input[type='range']::-webkit-slider-thumb {
+		-webkit-appearance: none !important;
+		height: 26px;
+		border-radius: 0;
+		border-width: 2px;
+		border-color: black;
+		background-color: #737373;
+		box-shadow: 0 0 1px 0 black;
 	}
 </style>

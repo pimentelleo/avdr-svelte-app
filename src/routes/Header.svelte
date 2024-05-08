@@ -30,20 +30,20 @@
 		overflow: hidden;
 		display: flex;
 		justify-content: space-between;
-		height: 5%;
+		align-items: center;
 	}
 	.users-status {
 		color: #ffffff;
 		display: flex;
 		gap: 10px;
+		margin-left: 10px;
 	}
 	.user-card {
 		background-color: #131313;
 		border-radius: 4px;
 		color: #ffffff;
-		padding: 8px 6px 6px 6px;
+		padding: 0px 6px 0px 6px;
 		margin: 0;
 		text-align: center;
-		line-height: 0.1em;
 	}
 </style>

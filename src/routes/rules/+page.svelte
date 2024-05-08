@@ -64,8 +64,7 @@
 	.content {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		align-content: center;
+		align-items: center;
 		padding: 0;
 		height: 100%;
 	}
@@ -73,9 +72,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: 4px;
-		align-content: center;
+		align-items: center;
 	}
-
+	h1 {
+		color: #ffffff;
+	}
 	p {
 		background-color: #131313;
 		border-radius: 4px;

@@ -1,15 +1,17 @@
 <div class="main-section">
 	<div class="content">
-		<div class="content-header">
-			<h2>Como se conectar ao servidor</h2>
-		</div>
 		<div class="content-data">
-			<h1>JAVA EDITION</h1>
-			<p>Server Address: vilarenegados.duckdns.org:17666</p>
+			<h1>Como se conectar ao servidor</h1>
 
-			<h1>BEDROCK EDITION (XBOX, PLAYSTATION, SWITCH, WINDOWS EDITION, MOBILE)</h1>
-			<p>Server Address: vilarenegados.duckdns.org Port: 19666</p>
-			<p>Port: 19666</p>
+			<div class="connect-edition">
+				<h2>JAVA EDITION</h2>
+				<p>Server Address: vilarenegados.duckdns.org:17666</p>
+			</div>
+			<div class="connect-edition">
+				<h2>BEDROCK EDITION (XBOX, PLAYSTATION, SWITCH, WINDOWS EDITION, MOBILE)</h2>
+				<p>Server Address: vilarenegados.duckdns.org</p>
+				<p>Port: 19666</p>
+			</div>
 		</div>
 	</div>
 </div>
@@ -26,5 +28,34 @@
 		justify-content: space-around;
 		padding: 0;
 		height: 100%;
+	}
+	.content-data {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+	.connect-edition {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		gap: 6px;
+	}
+	h1 {
+		color: #ffffff;
+	}
+	h2 {
+		color: #ffffff;
+	}
+	p {
+		background-color: #131313;
+		border-radius: 4px;
+		color: #ffffff;
+		padding: 8px 6px 6px 6px;
+		text-align: center;
+		width: 80%;
+		flex-grow: 2;
+		font-family: 'Minecraft Ten';
 	}
 </style>

@@ -21,8 +21,8 @@
 			<p>Lands - Gerenciamento de terrenos e nações</p>
 			<p>QuickshopReremake - Crie suas lojinhas, venda seus itens e gerencie seus estoques!</p>
 			<p>
-				Minetinkers - Suas armas e ferramentas agora tem slots! E podem receber modificadores que
-				alteram ou melhoram suas funcionalidades!
+				Minetinkers - Armas e ferramentas agora com slots! Com modificadores para adicionar aos
+				slots
 			</p>
 		</div>
 	</div>
@@ -33,18 +33,19 @@
 		width: auto;
 		flex-grow: 1;
 		background-color: #303030;
-		height: 0%;
+		display: flex;
 	}
 	.content {
 		background-color: black;
 		display: flex;
 		flex-direction: column;
-		align-content: center;
-		padding: 0;
 		height: 100%;
+		width: 100%;
+		align-items: center;
 	}
 	img {
 		width: 400px;
+		margin-top: 16px;
 	}
 	p {
 		color: #ffffff;
@@ -63,7 +64,8 @@
 	.server-plugins {
 		display: flex;
 		flex-direction: column;
-		align-content: center;
+		align-items: center;
+
 		flex-grow: 1;
 	}
 </style>

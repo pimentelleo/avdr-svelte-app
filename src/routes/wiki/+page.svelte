@@ -49,6 +49,9 @@
 
 <style>
 	.main-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		width: auto;
 		flex-grow: 1;
 	}

@@ -84,11 +84,12 @@
 		align-items: center;
 		align-content: center;
 		margin-left: 10%;
+		border-right-width: 4px;
+		border-right-color: #1e1e1e;
 	}
 
 	.sidebar > div.selected {
 		margin-left: 10%;
-		border-right-width: 8px;
 		border-right-width: 4px;
 		border-right-color: #118645;
 	}

@@ -48,18 +48,18 @@
 		margin-top: 16px;
 	}
 	p {
-		color: #ffffff;
+		color: #e9e9e9;
 	}
 	h1 {
-		color: #ffffff;
+		color: #e9e9e9;
 	}
 	.server-title {
 		flex-grow: 1;
-		color: #ffffff;
+		color: #e9e9e9;
 	}
 	.server-description {
 		flex-grow: 1;
-		color: #ffffff;
+		color: #e9e9e9;
 	}
 	.server-plugins {
 		display: flex;

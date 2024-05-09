@@ -33,7 +33,7 @@
 		align-items: center;
 	}
 	.users-status {
-		color: #ffffff;
+		color: #e9e9e9;
 		display: flex;
 		gap: 10px;
 		margin-left: 10px;
@@ -41,7 +41,7 @@
 	.user-card {
 		background-color: #131313;
 		border-radius: 4px;
-		color: #ffffff;
+		color: #e9e9e9;
 		padding: 0px 6px 0px 6px;
 		margin: 0;
 		text-align: center;

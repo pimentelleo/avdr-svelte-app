@@ -40,14 +40,15 @@
 			sectionIcon: minecraftLava
 		}
 	];
+	let cur = navSections[0].sectionRoute;
 </script>
 
 <div class="wrapper">
 	<div class="sidebar">
 		{#each navSections as nav}
-			<div>
+			<div class:selected={cur === nav.sectionRoute}>
 				<img src={nav.sectionIcon} alt={nav.sectionName} />
-				<a href="/{nav.sectionRoute}">
+				<a on:click={() => (cur = nav.sectionRoute)} href="/{nav.sectionRoute}">
 					{nav.sectionName}
 				</a>
 			</div>
@@ -83,6 +84,13 @@
 		align-items: center;
 		align-content: center;
 		margin-left: 10%;
+	}
+
+	.sidebar > div.selected {
+		margin-left: 10%;
+		border-right-width: 8px;
+		border-right-width: 4px;
+		border-right-color: #118645;
 	}
 	.wrapper {
 		display: flex;

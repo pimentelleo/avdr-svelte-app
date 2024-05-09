@@ -17,13 +17,14 @@
 		'QuickShop',
 		'TeleCraft'
 	];
+	let cur = tabSections[0];
 </script>
 
 <div class="app">
 	<div class="tabs">
 		{#each tabSections as section}
-			<div class={currentPage == section ? 'active' : 'inactive'}>
-				<a href="/{baseUrl}/{section.toLowerCase()}">{section}</a>
+			<div class:selected={cur === section}>
+				<a on:click={() => (cur = section)} href="/{baseUrl}/{section.toLowerCase()}">{section}</a>
 			</div>
 		{/each}
 	</div>
@@ -33,20 +34,16 @@
 </div>
 
 <style>
-	.tab-active {
-		background-color: yellow;
+	.tabs > div {
+		cursor: pointer;
+		margin-top: 10px;
 	}
-
-	div.active > a {
-		background-color: yellow;
-	}
-
-	.tab-inactive {
-		background-color: pink;
-	}
-
-	.tabs > div > a:hover {
-		background-color: green;
+	.tabs > div.selected {
+		border-top-right-radius: 8px;
+		border-top-left-radius: 8px;
+		border-bottom-width: 8px;
+		border-bottom-color: #118645;
+		border-bottom-width: 4px;
 	}
 
 	div > a {
@@ -61,10 +58,10 @@
 	.tabs {
 		display: flex;
 		justify-content: space-around;
-		align-items: center;
+		align-items: self-start;
 		background-color: #282828;
 		flex-grow: 0;
-		height: 14%;
+		height: 10%;
 	}
 
 	.main-content {

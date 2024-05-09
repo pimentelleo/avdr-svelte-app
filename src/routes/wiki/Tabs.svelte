@@ -8,23 +8,6 @@
 	const handleClick = (tabValue) => () => (activeTabValue = tabValue);
 </script>
 
-<ul>
-	{#each items as item}
-		<li class={activeTabValue === item.value ? 'active' : ''}>
-			<!-- svelte-ignore a11y-no-static-element-interactions -->
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<span on:click={handleClick(item.value)}>{item.label}</span>
-		</li>
-	{/each}
-</ul>
-{#each items as item}
-	{#if activeTabValue == item.value}
-		<div class="box">
-			<svelte:component this={item.component} />
-		</div>
-	{/if}
-{/each}
-
 <style>
 	.box {
 		margin-bottom: 10px;

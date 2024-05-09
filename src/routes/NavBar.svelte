@@ -86,6 +86,7 @@
 		margin-left: 10%;
 		border-right-width: 4px;
 		border-right-color: #1e1e1e;
+		transition: border-right 0.5s;
 	}
 
 	.sidebar > div.selected {
